@@ -59,8 +59,7 @@
 
  window.onload = function() {
 
-         document.getElementById('s1price').innerHTML = sm.price + " BYN.";
-         document.getElementById('s1title').innerHTML = sm.title;
-         document.getElementById('s1sostav').innerHTML =  sm.price;
-         document.getElementById('s1description').innerHTML = sm.description;
+         document.getElementById("s1price").innerHTML = sm.price + " BYN.";
+         document.getElementById("s1title").innerHTML = sm.title;
+
  }
