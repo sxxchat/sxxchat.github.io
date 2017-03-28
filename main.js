@@ -1,3 +1,4 @@
+
  //
  //
  // var sm = {
@@ -78,24 +79,10 @@
           document.getElementById("s1price").innerHTML = sm.price + " BYN.";
           document.getElementById("s1title").innerHTML = sm.title;
 
-  }
 
-var cart = {
-  cartTotal = 0,
-
-  $('.card-content').on('click', 'a', function (event) {
+ $('.card-content').on('click', 'a', function (event) {
   	cartTotal = $(this).parent().attr('id');
   	console.log(cartTotal);
   })
 
-
-
-}
-
-
-
-var cartTotal = 0
-
-  function addToCartByClick(button){
-  $(button).addClass("active")
-}
+  }
