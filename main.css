@@ -1,0 +1,213 @@
+nav {
+  height: 75px;
+  line-height: 75px;
+}
+.brand-logo {
+  padding-top: 2px !important;
+}
+.vok{
+  font-size: 18px;
+}
+.plus {
+  font-family: Gilroy-Black !important;
+  font-size: 28px;
+  color: red;
+  margin-left:-14px !important;
+  margin-top:-3px !important;
+}
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 85px;
+    line-height: 85px;
+}
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    display: block;
+    font-size: 30px;
+
+}
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    display: block;
+    font-size: 36px;
+
+}
+/*nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons:hover {
+    display: block;
+    font-size: 41px;
+}
+*/
+nav a:hover{
+
+
+  color: red;
+
+}
+
+.shopping-cart {
+  padding-left: 0;
+
+}
+
+#total, #totalPrice {
+  font-family: Gilroy-Black;
+  font-size: 14px;
+  color: black;
+  background-color: red;
+  border-radius: 15px;
+  padding: 3px 5px 2px 5px;
+
+}
+#totalPrice {
+position: relative;
+bottom: 20px;
+right: 10px;
+}
+
+#total {
+  z-index: 3;
+    position: relative;
+    left: 3px;
+    bottom: 6px;
+
+}
+.nav-wrapper {
+  padding-left: 20px;
+  padding-right: 0px;
+}
+
+.card .card-image .card-title{
+color: black;
+}
+.card-title{
+  font-size: 30px !important;
+}
+
+
+.btn {
+border: 2px solid black;
+border-radius: 5px;
+box-shadow: none;
+color: black;
+}
+.sostav {
+  color: black;
+  text-decoration: none;
+}
+.phone {
+  padding-left: 30px;
+
+}
+/*.workTime {
+  font-size: 12px;
+  margin-left: px;
+}
+.info{
+width: 500px;
+
+}*/
+
+.grey.darken-3 {
+  background-color: #212121 !important;
+}
+.about {
+  font-size: 12px !important;
+  line-height: 1em;
+}
+
+.footerBlock {
+  margin-bottom: 0px;
+}
+.dev {
+  font-size: 12px;
+}
+.dev a {
+
+  color: red !important;
+}
+
+.card {
+  padding-top: 25px;
+  border-radius: 5px;
+}
+
+
+
+a {
+  font-family: Gilroy-Bold;
+}
+
+h2{
+  font-family: Gilroy-Regular;
+}
+
+p{
+  font-family: Gilroy-Medium;
+}
+
+span{
+  font-family: Gilroy-Medium;
+}
+
+#total, #totalPrice {
+  font-family: Gilroy-Blackitalic;
+}
+
+
+
+
+
+
+.plus span {
+  font-family: Gilroy-Black !important;
+}
+.vok{
+  font-family: Gilroy-Black !important;
+}
+
+
+
+
+
+.menuType {
+  /* чтобы линии не выходили за ширину блока заголовка */
+  overflow: hidden;
+}
+.menuType:before,
+.menuType:after {
+  content: '';
+
+  /* делаем линию строчно-блочной */
+  display: inline-block;
+
+  /* выравниваем вертикально по середине */
+  vertical-align: middle;
+
+  /* не позволяем ширине превысить 100% (будет добавлен бордюр) */
+  box-sizing: border-box;
+
+
+  /* установка ширины в 100% делает линию равной ширине тега заголовка
+  ** благодаря этому линия заполнит все свободное пространство
+  ** слева и справа от текста
+  */
+  width: 45%;
+  height: 1px;
+  background: grey;
+
+  /* добавляем к линии левый и правый бордюр цветом основного фона заголовка
+  ** благодаря этому создается нужный отступ между линиями и текстом
+  */
+  border: 1px dotted white;
+  border-width: 1px 30px;
+}
+.menuType:before {
+  /* смещаем левую линию влево отрицательным отступом, равным 100% ширины
+  ** благодаря этому линия встает слева от текста
+  */
+  margin-left: -100%;
+}
+.menuType:after {
+  /* смещаем правую линию вправо отрицательным отступом, равным 100% ширины
+  ** благодаря этому линия встает справа от текста
+  */
+  margin-right: -100%;
+}
