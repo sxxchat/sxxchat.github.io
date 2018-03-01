@@ -9,10 +9,6 @@
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
 <link href="css/index.css" media="all" rel="stylesheet" type="text/css"/>
 <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"/>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
 </head>
 <style type="text/css">
 .vk-avatar img {
@@ -30,7 +26,7 @@
     clear: both;
 }
 </style>
-<body cz-shortcut-listen="true">
+<body cz-shortcut-listen="true">{{ body_top|safe }}
 <div class="fadepopup" style="display:none">
 <div class="modalx kmacb-form kmacb-form2 eoxp" id="kmacb-form">
 <div class="modal-block">
@@ -54,7 +50,19 @@
 </div>
 </div>
 <div class="eeee"></div>
-
+<script type="text/javascript">
+    var flag = true;
+    $(window).mouseout(function(e) {
+        if (e.pageY - $(window).scrollTop() < 1 && flag === true) {
+            $('.fadepopup, .eoxp').fadeIn(300);
+            $('.eeee').fadeIn(300);
+            flag = false;
+        }
+        $(".close").on("click", function() {
+            $('.fadepopup, .eoxp, .eeee').fadeOut(300);
+        })
+    });
+    </script>
 <script type="text/javascript">
     $(document).ready(
         function() {
@@ -339,25 +347,8 @@
 <div style="clear: both;"></div>
 </div>
 <br/>
-<p style="font-size: 25px; font-weight: 700;"> Eco Slim คืออะไร? </p>
-<p> หากร่างกายของคุณขาดวิตามิน A คุณสามารถรับประทานส้มได้ หากร่างกายคุณขาดฟอสฟอรัส คุณสามารถรับประทานปลาได้ หากร่างกายคุณขาดวิตามิน C คุณสามารถรับประทานแบล็คเคอแรนต์ได้ เฉพาะ Eco Slim เท่านั้นที่มีสารอาหารรองซึ่งสามารถเร่งให้เกิดการเผาผลาญมวลไขมันในร่างกายของมนุษย์ โดยเฉพาะ <b> บี-แครอทีนซึ่งเป็นสารต้านอนุมูลอิสระที่ยอดเยี่ยม
-                                    ที่ไม่เพียงแต่สามารถช่วยเผาผลาญไขมันได้เท่านั้น
-                                    แต่ยังสามารถช่วยปรับระบบการทำงานของร่างกายทั้งหมดได้อีกด้วย </b></p>
-<p><b> </b> Eco Slim ได้รับการทดสอบทางคลินิกแล้วว่าสามารถช่วยกระตุ้นระบบเมตาบอลิซึมได้ ฟื้นฟูการทำงานของระบบต่อมไร้ท่อ กระตุ้นการสร้างเนื้อเยื่อและลดความอยากอาหารได้ ผลิตภัณฑ์นี้เป็นออร์แกนิก 100% และสามารถช่วยกระตุ้นกระบวนการทำงานในร่างกายของมนุษย์ได้ ไม่จำเป็นต้องอดอาหารอย่างเข้มงวดเนื่องจากกระบวนการของระบบเมตาบอลิซึมทำงานได้ดีและเผาผลาญมวลไขมันได้ การรับประทานอาหารที่สมดุลสามารถส่งผลอย่างเพียงพอในการรักษาระดับการเผาผลาญของร่างกาย <b>
-                                    การออกกำลังกายที่หนักหน่วงก็ไม่จำเป็นด้วยเช่นเดียวกัน </b> เพียงแค่ออกกำลังกายด้วยการยืดกล้ามเนื้อตามธรรมดาก็เพียงพอ </p>
-<div style="clear: both;"></div>
-<p class="maki555_e4AaJE9jYG" style="text-indent: 0px; text-align: left; font-size: 17px; line-height:25px;">
-<b> คุณสมบัติหลักของ Eco Slim: </b>
-<br/><i>
-                                - เผาผลาญไขมัน <br/>
-                                - ลดความอยากอาหาร <br/>
-                                - ปรับระบบต่อมไร้ท่อให้เป็นปกติ <br/>
-                                - ฟื้นฟูร่างกายและขับสารพิษออกจากร่างกาย <br/>
-                                - ปรับปรุงรูปร่างให้สมส่วนด้วยการเผาผลาญมวลไขมัน <br/>
-</i>
 
-    
-        
+       
             <button id="buttOn" class="center">อ่านเพิ่มเติม<img src="img/down.png" style="width: 5%"></button>
             
        <script type="text/javascript">
@@ -377,13 +368,9 @@
     
     </script>
     
-    
-
-    </div>
-
-
-
-    
+   
+  
+ 
 
 
 
@@ -391,29 +378,45 @@
 
 
 
-</div>
-</div>
-</div>
-<style type="text/css">
-                            .comment-count {
-                                font-style: normal;
-                            }
 
-                            .vk-comment-text {
-                                font-weight: normal;
-                                font-style: normal;
-                            }
 
-                            .vk-comment-date {
-                                font-weight: normal;
-                                font-style: normal;
-                            }
 
-                            .vk-comment-name {
-                                font-style: normal;
-                            }
-                            </style>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Genrik91_k2XdOzZlq1-->
 </div>
 </div>
 </div>
@@ -423,5 +426,7 @@
 <span class="area-name"></span>
 <div class="tail"></div>
 </div>
+</div>
+
 </body>
 </html>
